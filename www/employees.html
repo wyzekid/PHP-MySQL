@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta http-equiv="content-type" content="text/html; charset=cp1251" />
+		<title>Городской музей</title>
+        <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+    </head>
+    <body>
+		<div id="bg">
+			<div id="outer">
+				<div id="header">
+					<div id="logo">
+						<h1>
+							<a href="#">Городской музей</a>
+						</h1>
+					</div>
+					<div id="nav">
+						<ul>
+							<li>
+								<a href="index.html">О музее</a>
+							</li>
+							<li>
+								<a href="excursions.html">Экскурсии</a>
+							</li>
+							<li class="first active">
+								<a href="#">Сотрудники</a>
+							</li>
+							<li>
+								<a href="queryRunner.html">SQL запросы</a>
+							</li>
+							<li class="last">
+								<a href="#">Выставочные залы</a>
+							</li>
+						</ul>
+						<br class="clear" />
+					</div>
+				</div>
+				<div id="banner">
+					<img src="images/pic1.jpg" width="1120" height="200" alt="" />
+				</div>
+				<div id="main">
+					<div id="sidebar">
+						
+					</div>
+					<div id="content">
+						<div id="box1">
+							<h2>
+								Сотрудники
+							</h2>
+								<div id="result"  style="text-align:center">
+								<script>
+								$('#result').load('scripts/show_employees.php', function() {});
+								</script>
+							</div>
+						</div>
+						
+						<br class="clear" />
+					</div>
+					<br class="clear" />
+				</div>
+				
+					<br class="clear" />
+				</div>
+			</div>
+			<div id="copyright">
+				Сайт городского музея | 2015
+			</div>
+		</div>
+    </body>
+</html>
